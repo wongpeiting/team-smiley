@@ -72,7 +72,7 @@
 <article class="story-card">
 	<hr class="divider" />
 
-	<h2 class="headline">Two in three rodent complaints come from homes</h2>
+	<h2 class="headline">Most rodent complaints come from homes</h2>
 	<p class="byline">By Pei Ting Wong</p>
 
 	<p>The vast majority of New Yorkers reporting rodent problems to 311 are doing so from where they live — not where they work or play.</p>
