@@ -141,12 +141,6 @@
 		margin-bottom: 3rem;
 	}
 
-	.divider {
-		border: none;
-		border-top: 2px solid #222;
-		margin: 0 0 2rem;
-	}
-
 	.headline {
 		font-size: 1.75rem;
 		font-weight: 700;
