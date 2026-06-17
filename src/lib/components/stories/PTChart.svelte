@@ -64,7 +64,7 @@
 
 	const locColorScale = d3.scaleOrdinal()
 		.domain(["Homes", "Offices", "Public spaces", "Other"])
-		.range(["#e15759", "#f28e2b", "#59a14f", "#bab0ac"])
+		.range(["#8b5e3c", "#8b5e3c", "#8b5e3c", "#8b5e3c"])
 
 	const fmt = d3.format(",")
 </script>
