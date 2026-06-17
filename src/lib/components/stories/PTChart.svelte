@@ -24,7 +24,7 @@
 	// 2. dimensions — for each small multiple
 	const width = 260
 	const height = 200
-	const margin = { top: 35, right: 10, bottom: 25, left: 40 }
+	const margin = { top: 50, right: 10, bottom: 25, left: 40 }
 
 	// 3. scales
 	// x: years are categories → scaleBand
@@ -133,8 +133,8 @@
 					<text x={margin.left} y="12" class="panel-title">
 						{panel.address}
 					</text>
-					<text x={margin.left} y="24" class="panel-subtitle">
-						{panel.borough} ({panel.change > 0 ? '+' : ''}{panel.change})
+					<text x={margin.left} y="28" class="panel-subtitle">
+						{panel.borough}
 					</text>
 
 					<!-- bars -->
@@ -190,8 +190,8 @@
 					<text x={margin.left} y="12" class="panel-title">
 						{panel.address}
 					</text>
-					<text x={margin.left} y="24" class="panel-subtitle">
-						{panel.borough} ({panel.change > 0 ? '+' : ''}{panel.change})
+					<text x={margin.left} y="28" class="panel-subtitle">
+						{panel.borough}
 					</text>
 
 					<!-- bars -->
@@ -255,6 +255,7 @@
 	}
 
 	.headline {
+		font-family: 'Source Serif 4', serif;
 		font-size: 1.75rem;
 		font-weight: 700;
 		line-height: 1.2;
@@ -290,9 +291,9 @@
 	}
 
 	.section-label {
-		font-size: 0.8125rem;
+		font-size: 1.125rem;
 		font-weight: 700;
-		margin: 0.25rem 0 0.1rem;
+		margin: 0.5rem 0 0.25rem;
 	}
 
 	.drop-label {
@@ -304,18 +305,18 @@
 	}
 
 	.panel-title {
-		font-size: 9px;
+		font-size: 15px;
 		font-weight: 600;
 		fill: #333;
 	}
 
 	.panel-subtitle {
-		font-size: 8px;
+		font-size: 13px;
 		fill: #666;
 	}
 
 	.axis-label {
-		font-size: 8px;
+		font-size: 13px;
 		fill: #999;
 	}
 

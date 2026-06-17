@@ -24,6 +24,7 @@
 		padding: 3rem 1.5rem 4rem;
 		background: #fff;
 		color: #111;
+		font-family: 'Source Sans 3', sans-serif;
 	}
 
 	.blog-column {
@@ -36,9 +37,10 @@
 	}
 
 	.blog-title {
-		font-size: 2.25rem;
-		font-weight: 700;
-		line-height: 1.15;
+		font-family: 'Source Serif 4', serif;
+		font-size: 2.75rem;
+		font-weight: 900;
+		line-height: 1.1;
 		margin: 0 0 0.75rem;
 	}
 
