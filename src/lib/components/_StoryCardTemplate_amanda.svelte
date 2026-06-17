@@ -17,12 +17,12 @@
 	let tip = $state({ show: false, text: '', x: 0, y: 0 });
 
 	onMount(() => {
-		const m = { top: 30, right: 55, bottom: 30, left: 110 };
+		const m = { top: 30, right: 55, bottom: 50, left: 110 };
 		const W = svgEl.clientWidth - m.left - m.right;
-		const H = 320 - m.top - m.bottom;
+		const H = 360 - m.top - m.bottom;
 
 		const svg = d3.select(svgEl)
-			.attr('height', 320)
+			.attr('height', 360)
 			.append('g')
 			.attr('transform', `translate(${m.left},${m.top})`);
 
