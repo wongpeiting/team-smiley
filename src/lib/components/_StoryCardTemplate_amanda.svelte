@@ -18,8 +18,8 @@
 	let tooltip = $state({ visible: false, x: 0, y: 0, text: '' });
 
 	onMount(() => {
-		const margin = { top: 30, right: 60, bottom: 20, left: 110 };
-		const totalHeight = 340;
+		const margin = { top: 30, right: 60, bottom: 50, left: 110 };
+		const totalHeight = 375;
 		const width  = svgEl.clientWidth - margin.left - margin.right;
 		const height = totalHeight - margin.top - margin.bottom;
 
