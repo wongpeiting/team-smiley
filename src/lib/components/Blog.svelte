@@ -1,8 +1,6 @@
 <script>
 	import PTChart from './stories/PTChart.svelte';
-
-	// Copy _StoryCardTemplate.svelte into stories/, rename it, then import here:
-	// import YourNameStory from './stories/YourNameStory.svelte';
+	import AmandaStory from './_StoryCardTemplate_amanda.svelte';
 </script>
 
 <main class="blog">
@@ -14,7 +12,7 @@
 		</header>
 
 		<PTChart />
-		<!-- <YourNameStory /> -->
+		<AmandaStory />
 	</div>
 </main>
 
