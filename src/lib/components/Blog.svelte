@@ -8,7 +8,7 @@
 <main class="blog">
 	<div class="blog-column">
 		<header class="blog-header">
-			<h1 class="blog-title">Creepy Roommates</h1>
+			<h1 class="blog-title">🐀🪳 Pesky Roommates 🪰🦟</h1>
 			<p class="blog-dek">Rats. Roaches. Bed bugs. Mosquitoes. What city data reveals about the creatures that share New York with 8 million people.</p>
 			<p class="blog-date">Published June 17, 2026</p>
 		</header>
@@ -38,7 +38,7 @@
 
 	.blog-title {
 		font-family: 'Source Serif 4', serif;
-		font-size: 2.75rem;
+		font-size: 3rem;
 		font-weight: 900;
 		line-height: 1.1;
 		margin: 0 0 0.75rem;
