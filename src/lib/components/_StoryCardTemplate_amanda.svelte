@@ -14,7 +14,7 @@
 	const YEARS  = { pct2017: '2017',    pct2021: '2021'    };
 
 	let svgEl;
-	let tip = { show: false, text: '', x: 0, y: 0 };
+	let tip = $state({ show: false, text: '', x: 0, y: 0 });
 
 	onMount(() => {
 		const m = { top: 30, right: 55, bottom: 30, left: 110 };
@@ -124,12 +124,6 @@
 
 <style>
 	.story-card  { margin-bottom: 3rem; }
-
-	.divider {
-		border: none;
-		border-top: 2px solid #222;
-		margin: 0 0 2rem;
-	}
 
 	.headline {
 		font-size: 1.75rem;
