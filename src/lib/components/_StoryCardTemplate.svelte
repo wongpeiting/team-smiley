@@ -23,6 +23,26 @@
 	</figure>
 </article>
 
+<article class="story-card">
+	<hr class="divider" />
+
+	<h2 class="headline">Your headline here</h2>
+	<p class="byline">By Your Name</p>
+
+	<p>Your first paragraph goes here.</p>
+	<p>Your second paragraph goes here.</p>
+
+	<figure class="chart">
+		<figcaption class="chart-title">Chart title</figcaption>
+
+		<div class="chart-workspace">
+			<p class="chart-placeholder">Your chart goes here</p>
+		</div>
+
+		<figcaption class="chart-footer">Chart source or caption</figcaption>
+	</figure>
+</article>
+
 <style>
 	.story-card {
 		margin-bottom: 3rem;

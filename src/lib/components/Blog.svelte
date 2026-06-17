@@ -1,5 +1,5 @@
 <script>
-	import ExampleStory from './stories/ExampleStory.svelte';
+	import PTChart from './stories/PTChart.svelte';
 
 	// Copy _StoryCardTemplate.svelte into stories/, rename it, then import here:
 	// import YourNameStory from './stories/YourNameStory.svelte';
@@ -8,11 +8,11 @@
 <main class="blog">
 	<div class="blog-column">
 		<header class="blog-header">
-			<h1 class="blog-title">Blog title here</h1>
-			<p class="blog-date">Published June 10, 2026</p>
+			<h1 class="blog-title">Unwanted Tenants</h1>
+			<p class="blog-date">Published June 17, 2026</p>
 		</header>
 
-		<ExampleStory />
+		<PTChart />
 		<!-- <YourNameStory /> -->
 	</div>
 </main>
