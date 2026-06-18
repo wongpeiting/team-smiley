@@ -112,7 +112,7 @@
 <article class="story-card">
 	<hr class="divider" />
 
-	<h2 class="headline">One in Three Bronx Children Live With Mice</h2>
+	<h2 class="headline">One in three Bronx children live with mice</h2>
 	<p class="byline">By Amanda</p>
 
 	<p>Across New York City, nearly one in four children ages 1 to 13 live in homes with mice — but the burden falls hardest in the Bronx, where that share has risen to 35% in 2021.</p>

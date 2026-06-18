@@ -1,6 +1,6 @@
 <script>
 	import PTChart from './stories/PTChart.svelte';
-	import AmandaStory from './_StoryCardTemplate_amanda.svelte';
+	import AmandaChart from './AmandaChart.svelte';
 </script>
 
 <main class="blog">
@@ -12,7 +12,7 @@
 		</header>
 
 		<PTChart />
-		<AmandaStory />
+		<AmandaChart />
 	</div>
 </main>
 
