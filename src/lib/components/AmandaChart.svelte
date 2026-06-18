@@ -113,7 +113,7 @@
 	<hr class="divider" />
 
 	<h2 class="headline">One in three Bronx children live with mice</h2>
-	<p class="byline">By Amanda</p>
+	<p class="byline">By Amanda Fernandez</p>
 
 	<p>Across New York City, nearly one in four children ages 1 to 13 live in homes with mice — but the burden falls hardest in the Bronx, where that share has risen to 35% in 2021.</p>
 	<p>Staten Island children are the least exposed at 12%, while the Bronx figure is three times higher, reflecting deep inequalities in housing quality across the city.</p>
@@ -121,15 +121,13 @@
 	<figure class="chart">
 		<figcaption class="chart-title">% of children ages 1–13 living in homes with mice, by borough</figcaption>
 
-		<div class="chart-workspace">
-			<div class="svg-wrap">
-				<svg bind:this={svgEl}></svg>
-				{#if tooltip.visible}
-					<div class="tooltip" style="left:{tooltip.x}px; top:{tooltip.y}px">
-						{tooltip.text}
-					</div>
-				{/if}
-			</div>
+		<div class="svg-wrap">
+			<svg bind:this={svgEl}></svg>
+			{#if tooltip.visible}
+				<div class="tooltip" style="left:{tooltip.x}px; top:{tooltip.y}px">
+					{tooltip.text}
+				</div>
+			{/if}
 		</div>
 
 		<figcaption class="chart-footer">Source: NYC DOHMH Environment & Health Data Portal, NYC Kids Survey (2017, 2021)</figcaption>
@@ -142,6 +140,7 @@
 	}
 
 	.headline {
+		font-family: 'Source Serif 4', serif;
 		font-size: 1.75rem;
 		font-weight: 700;
 		line-height: 1.2;
@@ -150,17 +149,14 @@
 
 	.byline {
 		font-size: 0.875rem;
-		color: #888;
+		color: #666;
 		margin: 0 0 1.5rem;
-		text-transform: uppercase;
-		letter-spacing: 0.04em;
 	}
 
 	p {
 		font-size: 1.0625rem;
 		line-height: 1.7;
 		margin: 0 0 1rem;
-		max-width: 640px;
 	}
 
 	.chart {
@@ -168,16 +164,9 @@
 	}
 
 	.chart-title {
-		font-size: 0.9rem;
+		font-size: 0.875rem;
 		font-weight: 600;
-		color: #222;
-		margin-bottom: 1rem;
-		display: block;
-	}
-
-	.chart-workspace {
-		background: #fff;
-		padding: 1rem 0.5rem 0.5rem;
+		margin-bottom: 0.75rem;
 	}
 
 	.svg-wrap {
@@ -203,8 +192,7 @@
 
 	.chart-footer {
 		margin-top: 0.75rem;
-		font-size: 0.8rem;
-		color: #999;
-		display: block;
+		font-size: 0.8125rem;
+		color: #666;
 	}
 </style>

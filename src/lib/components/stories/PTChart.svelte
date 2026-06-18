@@ -51,7 +51,7 @@
 	// --- Chart 2: location breakdown ---
 	const locWidth = 500
 	const locHeight = 200
-	const locMargin = { top: 10, right: 60, bottom: 20, left: 120 }
+	const locMargin = { top: 10, right: 60, bottom: 20, left: 80 }
 
 	const locYScale = d3.scaleBand()
 		.domain(locData.map(d => d.category))
@@ -80,34 +80,32 @@
 	<figure class="chart">
 		<figcaption class="chart-title">Rodent complaints by location type (2020–2026)</figcaption>
 
-		<div class="chart-workspace">
-			<svg viewBox="0 0 {locWidth} {locHeight}" width="100%">
-				{#each locData as d}
-					<rect
-						x={locMargin.left}
-						y={locYScale(d.category)}
-						width={locXScale(d.count) - locMargin.left}
-						height={locYScale.bandwidth()}
-						fill={locColorScale(d.category)}
-					/>
-					<text
-						x={locMargin.left - 8}
-						y={locYScale(d.category) + locYScale.bandwidth() / 2 + 4}
-						text-anchor="end"
-						class="cat-label"
-					>
-						{d.category}
-					</text>
-					<text
-						x={locXScale(d.count) + 5}
-						y={locYScale(d.category) + locYScale.bandwidth() / 2 + 4}
-						class="count-label"
-					>
-						{fmt(d.count)}
-					</text>
-				{/each}
-			</svg>
-		</div>
+		<svg viewBox="0 0 {locWidth} {locHeight}" width="100%">
+			{#each locData as d}
+				<rect
+					x={locMargin.left}
+					y={locYScale(d.category)}
+					width={locXScale(d.count) - locMargin.left}
+					height={locYScale.bandwidth()}
+					fill={locColorScale(d.category)}
+				/>
+				<text
+					x={locMargin.left - 8}
+					y={locYScale(d.category) + locYScale.bandwidth() / 2 + 4}
+					text-anchor="end"
+					class="cat-label"
+				>
+					{d.category}
+				</text>
+				<text
+					x={locXScale(d.count) + 5}
+					y={locYScale(d.category) + locYScale.bandwidth() / 2 + 4}
+					class="count-label"
+				>
+					{fmt(d.count)}
+				</text>
+			{/each}
+		</svg>
 
 		<figcaption class="chart-footer">Source: NYC 311 Service Requests (Open Data)</figcaption>
 	</figure>
@@ -320,17 +318,8 @@
 		fill: #999;
 	}
 
-	.chart-workspace {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		min-height: 320px;
-		border: 1px solid #ddd;
-		background: #fafafa;
-	}
-
-	.cat-label {
-		font-size: 12px;
+.cat-label {
+		font-size: 10px;
 		font-weight: 600;
 		fill: #333;
 	}
