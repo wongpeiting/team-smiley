@@ -62,10 +62,6 @@
 		.domain([0, d3.max(locData, d => d.count)])
 		.range([locMargin.left, locWidth - locMargin.right])
 
-	const locColorScale = d3.scaleOrdinal()
-		.domain(["Homes", "Offices", "Public spaces", "Other"])
-		.range(["#8b5e3c", "#8b5e3c", "#8b5e3c", "#8b5e3c"])
-
 	const fmt = d3.format(",")
 </script>
 
@@ -87,7 +83,7 @@
 					y={locYScale(d.category)}
 					width={locXScale(d.count) - locMargin.left}
 					height={locYScale.bandwidth()}
-					fill={locColorScale(d.category)}
+					fill="#8b5e3c"
 				/>
 				<text
 					x={locMargin.left - 8}
